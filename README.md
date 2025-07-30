@@ -8,3 +8,4 @@
 # References to study:
 
 - https://editor.p5js.org/kimxsegfault/sketches/hZNzN93DX
+- https://www.w3schools.com/graphics/canvas_circles.asp
