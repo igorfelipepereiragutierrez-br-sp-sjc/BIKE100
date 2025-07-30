@@ -15,17 +15,57 @@ class BIKEIG {
 
 
 
-    displayCircle() {
+    displayCircleFront() {
 
         const canvas = document.getElementById("myCanvas");
         const ctx = canvas.getContext("2d");
 
         ctx.beginPath();
-        ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+
+        //Primeiro parametro, distancia da borda esquerda.
+        //Segundo parametro, distancia da borda superior.
+        //Terceiro parametro, tamanho do circulo/aro.
+        //Quarto parametro, Ponto de inicio do circulo/aro.
+        //Quinto parametro, 2 * 3,14159 = 6.28318.
+        ctx.arc(100, 100, 26, 0, 2 * Math.PI, false);
+
+        //Altura/borda do circulo/aro.
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = "red";
+
+        ctx.fillStyle = "blue";
+        ctx.fill();
+
         ctx.stroke();
     }
+
+
+    displayCircleEnd() {
+
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+
+        ctx.beginPath();
+
+        //Primeiro parametro, distancia da borda esquerda.
+        //Segundo parametro, distancia da borda superior.
+        //Terceiro parametro, tamanho do circulo/aro.
+        //Quarto parametro, Ponto de inicio do circulo/aro.
+        //Quinto parametro, 2 * 3,14159 = 6.28318.
+        ctx.arc(200, 100, 26, 0, 2 * Math.PI, false);
+
+        //Altura/borda do circulo/aro.
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = "red";
+
+        ctx.fillStyle = "blue";
+        ctx.fill();
+
+        ctx.stroke();
+    }    
 }
 
 var myBike = new BIKEIG('Caloi', 'BIKE100');
 myBike.displayDetails();
-myBike.displayCircle();
+myBike.displayCircleFront();
+myBike.displayCircleEnd();
