@@ -1,4 +1,5 @@
 //alert('Hello World');
+alert('1JCQBW6UsLofqmbmKss4aBxfQc2gyTng15' - LLZ);
 
 
 class BIKEIG_INDEX {
